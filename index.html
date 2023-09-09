@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* body{
+            background-image: url(https://img.freepik.com/free-photo/spicy-appetizing-neapolitan-pizza-board-with-cherry-tomatoes-chilli-free-space-text_78826-2831.jpg?size=626&ext=jpg&ga=GA1.1.1924478754.1694245219&semt=ais);
+        } */
+#main-header{
+   display: flex;
+   justify-content: space-evenly;
+   /* background-color: rgb(138, 187, 187); */
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+}
+#main-header>div{
+   /* background-color: rgb(240, 151, 151); */
+   height: 80px;
+   width: 350px;
+   margin: 10px;
+   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+/* Logo */
+#image-logo{
+   width: 75px;
+   height: 75px;
+   border: 5px solid #69e620;
+   border-radius: 50%;
+   /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+   border: top color rgb(230, 49, 49); 
+   animation: rotate 3s infinite;
+}
+@keyframes rotate{
+   100%{
+       rotate: 360deg;
+   }
+}
+#title-name{
+   color:blueviolet;
+}
+#title-name > img{
+   height: 80px;
+   width: 250px;
+   
+
+}
+img::selection{
+color: rgb(10, 10, 10);
+background-color: rgb(240, 237, 94);
+}
+
+
+/* navigation-bar */
+#navigation-bar{
+background-color: rgb(255, 255, 255);
+overflow: auto;
+}
+#navigation-bar a{
+float: left;
+padding: 3px;
+color: rgb(8, 8, 8);
+text-decoration: none;
+font-size: 20px;
+width: 23%; /* Four links of equal widths */
+text-align: center;
+padding-top: 25px;
+font-weight: bolder;
+} 
+ #navigation-bar a:hover{
+float: left;
+padding: 3px;
+color: rgb(83, 247, 83);
+text-decoration: none;
+font-size: 20px;
+ width: 23%; /* Four links of equal widths */
+text-align: center;
+padding-top: 25px;
+ }
+
+ /* gap between nav bar to poster image*/
+ #gap{
+    margin: 120px;
+ }
+
+
+ /* poster prev & next button */
+
+ #poster-image,#next-button{
+    text-align: center;
+ }
+ #next-button:hover{
+    color: #2350e4;
+ }
+
+/* product list */
+#product-list{
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+    border: 1px;
+    
+    
+    
+}
+.product-1,.product-2{
+    border: 1px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+/* button for product search */
+#product-button{
+    display: flex;
+    justify-content: center;
+    border: 1px solid none;
+    background-color: #0A8020;
+    color: #ffffff;
+    width: 825px;
+    height: 14px;
+    padding: 2%;
+    margin-left: 17%;
+    border-radius: 6px;
+    font-weight:900;
+    
+}
+
+#product-button:hover{
+    display: flex;
+    justify-content: center;
+    border: 1px solid none;
+    background-color: #086118;
+    color: #ffffff;
+    width: 825px;
+    height: 14px;
+    padding: 2%;
+    margin-left: 17%;
+    border-radius: 6px;
+    font-weight:900;
+    
+}
+
+#popular-deals{
+   text-align: center;
+   font-size: x-large;
+   /* font-weight: bolder; */
+}
+
+/* footer */
+#footer-main{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    background-color: black;
+    color: #ffffff;
+    padding-top: 50px;
+    /* font-weight:bold; */
+    
+}
+p{
+    gap: 30px;
+}
+.socal-media{
+    display: flex;
+    justify-content:space-evenly ;
+    border: 1px solid black;
+    background-color: black;
+    color: #ffffff;
+    
+}
+
+/* apps link */
+
+.apps-link>a{
+    color: #ace9af;
+    font-weight: bold;
+    padding: 5px;
+   
+}
+
+.apps-link>a:hover{
+    color: #26812b;
+    font-weight: bold;
+    padding: 5px;
+}
+.copyright{
+    color: #e7c8c8;
+}
+
+
+
+
+
+</style>
+    
+   
+</head>
+<body>
+    
+    <header>
+        <div id="main-header">
+            <div>
+                <img id="image-logo"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt2ynlqSW8S5egerb0Km0CQeIJC3-_cj52-w&usqp=CAU" alt="logo">
+            </div>
+
+            <div id="title-name">
+                <!-- <marquee behavior="scroll" direction="up"> -->
+                    <!-- <h1>Pizza Hut</h1> -->
+                    <img src="data:image/png;base64,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" alt="">
+                <!-- </marquee> -->
+            </div>
+                                           <!-- navigation bar -->
+            <div id="navigation-bar">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+            
+        </div>
+    </header>
+                                                 <!-- poster -->
+    <div id="poster-image">
+        <img id="poster" src="https://img.freepik.com/free-psd/food-menu-delicious-pizza-web-banner-template_120329-3349.jpg?size=626&ext=jpg&ga=GA1.2.1924478754.1694245219&semt=ais" alt="poster image" height="500px" width="100%">
+
+        <div id="next-button">
+            <button id="prev"> < </button>
+            <button id="next"> > </button>
+        </div>
+
+        
+
+    
+
+        <!-- link of pizza poster  -->
+
+        <!-- https://img.freepik.com/premium-photo/creative-pizza-banner-design-with-top-view-perspective-3d-illustration-realistic-pizza-banner-ad_667286-105.jpg?size=626&ext=jpg&ga=GA1.1.1924478754.1694245219&semt=ais -->
+
+        <!-- https://img.freepik.com/free-psd/fast-food-restaurant-banner-template_23-2148987498.jpg?size=626&ext=jpg&ga=GA1.2.1924478754.1694245219&semt=ais -->
+
+        <!-- https://img.freepik.com/free-vector/colorful-background-with-prepared-pizza_1284-9275.jpg?size=626&ext=jpg&ga=GA1.2.1924478754.1694245219&semt=ais -->
+
+        <!-- https://img.freepik.com/free-vector/italian-chef-hot-pizza-illustration_1308-2306.jpg?size=626&ext=jpg&ga=GA1.2.1924478754.1694245219&semt=ais -->
+
+        <!-- https://img.freepik.com/premium-photo/pizza-is-sitting-wooden-counter-front-brick-fire_875722-19337.jpg?size=626&ext=jpg&ga=GA1.2.1924478754.1694245219&semt=ais -->
+
+        <!-- https://img.freepik.com/free-vector/pizza-restaurant-template-design_23-2150307382.jpg?size=626&ext=jpg&ga=GA1.2.1924478754.1694245219&semt=ais -->
+
+        <!-- https://img.freepik.com/premium-photo/pizza-with-slice-being-lifted-up-word-pizza-it_779834-3140.jpg?size=626&ext=jpg&ga=GA1.2.1924478754.1694245219&semt=ais -->
+
+    </div>
+
+    <div id="gap"></div>
+    
+    <div id="popular-deals">
+        <h2>Our Most Popular Deals</h2>
+    </div>
+
+    <div id="product-list">
+        <div class="product-1">
+            <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/promo/one-plus-one-personal.804a46d55f8bad9e3d598fa4907acea0.1.jpg" alt="product-image-1"  height="330px" width="430px">
+        </div>
+
+        <div class="product-2">
+            <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/promo/hut300.312236d18a76801105b271168dc4fab9.1.jpg" alt="product-image-2" height="330px" width="430px">
+        </div>
+
+        
+
+    </div>
+
+    
+                               <!-- button for product search -->
+    <div>
+        <a id="product-button" href="#">View all details</a>
+    </div>
+
+                                <!-- footer -->
+    <footer>
+        <div id="footer-main">
+            <div class="order-list">
+                <div><h3>Order Now</h3>
+                    <p>Deals</p>
+                    <p>Pizza</p>
+                    <p>Sides</p>
+                    <p>Drinks</p>
+                    <P>Dessert</P>
+                    
+                </div>
+
+            </div>
+
+            <div>
+                <div><h3>About</h3>
+                    <p>Deals</p>
+                    <p>Pizza</p>
+                    <p>Sides</p>
+                    <p>Drinks</p>
+                    <P>Dessert</P>
+                </div>
+            </div>
+
+            <div>
+                <div><h3>Our Policies</h3>
+                    <p>Deals</p>
+                    <p>Pizza</p>
+                    <p>Sides</p>
+                    <p>Drinks</p>
+                    <P>Dessert</P>
+                </div>
+            </div>
+
+            <div>
+                <div><h3>Visit Pizza Hut</h3>
+                    <p>Deals</p>
+                    <p>Pizza</p>
+                    <p>Sides</p>
+                    <p>Drinks</p>
+                    <P>Dessert</P>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <!-- socal media  -->
+        <div class="socal-media">
+            <div>
+                <div class="map">
+                    <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d229336.13869473472!2d83.88508507363281!3d26.086604010110612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1694259056170!5m2!1sen!2sin" width="300" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div><h3>Follow Us</h3>
+                <div  class="apps-link">
+                    <a href="https://www.facebook.com/profile.php?id=100065452093398">Facebook</a>
+                    <a href="https://twitter.com/satyajeetcse">Twitter</a>
+                    <a href="https://www.instagram.com/satyajeetrahul/">Instagram</a>
+                    <a href="https://www.linkedin.com/in/contactsatyajeetbharti">Linkedin</a>
+                    <a href="https://github.com/satyajeetbharti">Github</a>
+                </div>
+            </div>
+
+
+            <!-- copyright line -->
+            <p class="copyright"><br>All Copyright reserved &copy; 2023 <br>
+                <span>satyajeet-bharti</span> 
+            </p>
+            
+        </div>
+
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
+
+
+
+
+
+

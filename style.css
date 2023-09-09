@@ -1,0 +1,173 @@
+    /* body{
+            background-image: url(https://img.freepik.com/free-photo/spicy-appetizing-neapolitan-pizza-board-with-cherry-tomatoes-chilli-free-space-text_78826-2831.jpg?size=626&ext=jpg&ga=GA1.1.1924478754.1694245219&semt=ais);
+        } */
+        #main-header{
+            display: flex;
+            justify-content: space-evenly;
+            /* background-color: rgb(138, 187, 187); */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            
+         }
+         #main-header>div{
+            /* background-color: rgb(240, 151, 151); */
+            height: 80px;
+            width: 350px;
+            margin: 10px;
+            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+         }
+         
+         /* Logo */
+         #image-logo{
+            width: 75px;
+            height: 75px;
+            border: 5px solid #69e620;
+            border-radius: 50%;
+            /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+            border: top color rgb(230, 49, 49); 
+            animation: rotate 3s infinite;
+         }
+         @keyframes rotate{
+            100%{
+                rotate: 360deg;
+            }
+         }
+         #title-name{
+            color:blueviolet;
+         }
+         #title-name > img{
+            height: 80px;
+            width: 250px;
+            
+         
+         }
+         img::selection{
+         color: rgb(10, 10, 10);
+         background-color: rgb(240, 237, 94);
+         }
+         
+         
+         /* navigation-bar */
+         #navigation-bar{
+         background-color: rgb(255, 255, 255);
+         overflow: auto;
+         }
+         #navigation-bar a{
+         float: left;
+         padding: 3px;
+         color: rgb(8, 8, 8);
+         text-decoration: none;
+         font-size: 20px;
+         width: 23%; /* Four links of equal widths */
+         text-align: center;
+         padding-top: 25px;
+         font-weight: bolder;
+         } 
+          #navigation-bar a:hover{
+         float: left;
+         padding: 3px;
+         color: rgb(83, 247, 83);
+         text-decoration: none;
+         font-size: 20px;
+          width: 23%; /* Four links of equal widths */
+         text-align: center;
+         padding-top: 25px;
+          }
+         
+          /* gap between nav bar to poster image*/
+          #gap{
+             margin: 120px;
+          }
+         
+         /* product list */
+         #product-list{
+             display: flex;
+             justify-content:center;
+             gap: 10px;
+             border: 1px;
+             
+             
+             
+         }
+         .product-1,.product-2{
+             border: 1px;
+             box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+         }
+         
+         /* button for product search */
+         #product-button{
+             display: flex;
+             justify-content: center;
+             border: 1px solid none;
+             background-color: #0A8020;
+             color: #ffffff;
+             width: 825px;
+             height: 14px;
+             padding: 2%;
+             margin-left: 17%;
+             border-radius: 6px;
+             font-weight:900;
+             
+         }
+         
+         #product-button:hover{
+             display: flex;
+             justify-content: center;
+             border: 1px solid none;
+             background-color: #086118;
+             color: #ffffff;
+             width: 825px;
+             height: 14px;
+             padding: 2%;
+             margin-left: 17%;
+             border-radius: 6px;
+             font-weight:900;
+             
+         }
+         
+         #popular-deals{
+            text-align: center;
+            font-size: x-large;
+            /* font-weight: bolder; */
+         }
+         
+         /* footer */
+         #footer-main{
+             display: flex;
+             justify-content: space-around;
+             border: 1px solid black;
+             background-color: black;
+             color: #ffffff;
+             padding-top: 50px;
+             /* font-weight:bold; */
+             
+         }
+         p{
+             gap: 30px;
+         }
+         .socal-media{
+             display: flex;
+             justify-content:space-evenly ;
+             border: 1px solid black;
+             background-color: black;
+             color: #ffffff;
+             
+         }
+         
+         /* apps link */
+         
+         .apps-link>a{
+             color: #ace9af;
+             font-weight: bold;
+             padding: 5px;
+            
+         }
+         
+         .apps-link>a:hover{
+             color: #26812b;
+             font-weight: bold;
+             padding: 5px;
+         }
+         .copyright{
+             color: #e7c8c8;
+         }
+         
